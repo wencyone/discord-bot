@@ -1,0 +1,19 @@
+{
+  "name": "english-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "English Discord bot",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check system.js && node --check src/index.js && node --check src/leave.js && node --check src/leaveCard.js && node --check src/polls/card.js && node --check src/polls/index.js && node --check src/polls/state.js && node --check src/polls/voting.js && node --check src/tickets/cooldown.js && node --check src/tickets/index.js && node --check src/tickets/panel.js && node --check src/tickets/publish.js && node --check src/tickets/state.js && node --check src/tickets/transcript.js && node --check src/welcome.js && node --check src/welcomeCard.js",
+    "ticket:panel": "node src/tickets/publish.js"
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "1.1.0",
+    "discord.js": "14.26.4"
+  }
+}
